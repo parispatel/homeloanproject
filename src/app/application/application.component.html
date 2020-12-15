@@ -1,0 +1,113 @@
+<html>
+
+<body>
+  <div id="application">
+    <form id="regForm" >
+      <h1>Application:</h1>
+      <!-- One "tab" for each step in the form: -->
+      <div class="tab">Personal Details
+        <p>First Name:
+          <input type="text" placeholder="First name..." oninput="this.className = ''" name="fname">
+        </p>
+        <p>Middle name:
+          <input type="text" placeholder="Middle name..." oninput="this.className = ''" name="mname">
+        </p>
+        <p>Last name:
+          <input type="text" placeholder="Last name..." oninput="this.className = ''" name="lname">
+        </p>
+        <p>Gender:</p>
+            <p>Male<input type="radio" value="male" oninput="this.className = ''" name="gender" />
+						Female<input type="radio" value="female" oninput="this.className = ''" name="gender" />
+            Others<input type="radio" value="others" oninput="this.className = ''" name="gender" />
+          </p>
+    
+        <p>Birthday:
+          <input type="date" oninput="this.className = ''" name="dob">
+        </p>
+        <p>PAN:
+          <input type="text" placeholder="PAN..." oninput="this.className = ''" name="pan">
+        </p>
+        <p>Aadhar:
+          <input type="text" placeholder="Aadhar..." oninput="this.className = ''" name="aadhar">
+        </p>
+        <p>Nationality:
+          <!-- <input type="" oninput="this.className = ''" name="nationality"> -->
+          <select name="nationality">
+            <option value="-1">[Choose Your Nationality]</option>
+            <option value="Indian" selected>INDIAN</option>
+            <option value="Other">OTHERS</option>
+          </select>
+        </p>
+        <p>E-mail:
+          <input type="email" placeholder="E-mail..."  input type=email oninput="this.className = ''" name="email">
+        </p>
+        <p>Mobile:
+          <input type="number" placeholder="Mobile..." oninput="this.className = ''" name="mobile">
+        </p>
+      </div>
+      
+      
+      <div class="tab">Employment Details
+        <p>Employment Type
+          <select name="nationality">
+            <option value="-1">Salaried</option>
+            <option value="Indian" selected>Self Employed</option>
+            <option value="Other">Salaried+Self Employed</option>
+          </select>
+        </p>
+        <p>Monthly Income<input type="number" placeholder="Monthly Income..." oninput="this.className = ''" name="monthlyIncome"></p>
+        <p>Organisation Name<input type="text" placeholder="Organisation Name..." oninput="this.className = ''" name="organisationName"></p>
+        <p>Retirement Age<input type="number" placeholder="Retirement Age..." oninput="this.className = ''" name="retirementAge"></p>
+      </div>
+      
+      
+      <div class="tab">Property Detail
+        <p>Property Name:<input type="text" placeholder="Property Name..." oninput="this.className = ''" name="propertyName"></p>
+        <p>Property Location:<input type="text" placeholder="Property Location..." oninput="this.className = ''" name="propertyLocation"></p>
+        <p>Property Cost:<input type="number" placeholder="Property Cost..." oninput="this.className = ''" name="propertyCost"></p>
+      </div>
+      
+      
+      <div class="tab">Loan Requirement
+        <p>Required Loan Amount:<input type="number" placeholder="Required Loan Amount..." oninput="this.className = ''" name="requiredAmount"></p>
+        <p>Eligible Amount:<input type="number" placeholder="Eligible Amount..." oninput="this.className = ''" name="eligibleAmount"></p>
+        <p>Loan Tenure:<input type="number" placeholder="Loan Tenure..." oninput="this.className = ''" name="loanTenure"></p>
+        <p>Rate of interest:<input placeholder="Rate of interest..." oninput="this.className = ''" name="rateOfInterest"></p>
+      </div>
+
+      <div class="tab">Documents Upload
+        <p>Pan Card:<input type="file" id="pancard" oninput="this.className = ''" name="pancard"></p>
+        <p>Voter ID:<input type="file" id="voterid" oninput="this.className = ''" name="voterid"></p>
+        <p>Salary Slip:<input type="file" id="salary" oninput="this.className = ''" name="salary"></p>
+        <p>LOA:<input type="file" id="loa" oninput="this.className = ''" name="loa"></p>
+        <p>NOC from builder:<input type="file" id="noc" oninput="this.className = ''" name="noc"></p>
+        <p>Agreement to Sale:<input type="file" id="agreement" oninput="this.className = ''" name="agreement"></p>
+        <p><input type="submit" id="doc_submit" value="Submit"></p> 
+      </div>
+      
+      
+      <div style="overflow:auto;">
+        <div style="float:right;">
+          <button type="button" id="prevBtn" (click)="nextPrev(-1)">Previous</button>
+          <button type="button" id="nextBtn" (click)="nextPrev(1)">Next</button>
+        </div>
+      </div>
+
+
+      <!-- Circles which indicates the steps of the form: -->
+      <div style="text-align:center;margin-top:40px;">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+      </div>
+    </form>
+
+  </div>  
+
+
+</body>
+
+
+</html>

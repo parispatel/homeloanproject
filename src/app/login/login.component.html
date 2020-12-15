@@ -1,0 +1,95 @@
+<html>   
+
+  <head>
+    <title>Login</title>
+    <!-- <link rel="stylesheet" href="mycss/PersonalDetails.css" type="text/css" /> -->
+    <script type="text/javascript">
+      // Get the modal
+      var modal1 = document.getElementById('loginuser');
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal1) {
+          modal1.style.display = "none";
+        }
+      }
+
+      var modal2 = document.getElementById('loginadmin');
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal2) {
+          modal2.style.display = "none";
+        }
+      }
+
+    </script>
+  </head>
+
+
+<!-- Modal -->
+<div id="loginuser" class="modal">
+  <span class="span" onclick="document.getElementById('loginuser').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+
+    <div class="container">
+      
+      <h2 style="text-align: center">User Login</h2>
+
+        <p>
+          <label for="uname"><b>Email</b></label>
+         <input type="text" placeholder="Enter Username" name="uname" required>
+        </p>
+        <p>
+          <label for="psw"><b>Password</b></label>
+         <input type="password" placeholder="Enter Password" name="psw" required>
+        </p>
+
+      <button type="submit">Login</button>
+      
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('loginuser').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<div id="loginadmin" class="modal">
+  <span onclick="document.getElementById('loginadmin').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+
+    <div class="container">
+
+    <h2 style="text-align: center">Admin Login</h2>
+
+    
+        <p>
+          <label for="uname"><b>Username</b></label>
+         <input type="text" placeholder="Enter Username" name="uname" required>
+        </p>
+        <p>
+          <label for="psw"><b>Password</b></label>
+         <input type="password" placeholder="Enter Password" name="psw" required>
+        </p>
+
+      <button type="submit">Login</button>
+      
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('loginadmin').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+
+</html> 

@@ -1,0 +1,76 @@
+<html>   
+
+    <div id="calculator" class="modal">
+        <span onclick="document.getElementById('calculator').style.display='none'" 
+            class="close" title="Close Modal">&times;</span>
+        <form class="modal-content animate">
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('calelligibility').style.display='block'"
+                position= relative top= 50% left= 50%>
+                    Eligibility Calculator
+                </button>
+
+                <button type="button" onclick="document.getElementById('calemi').style.display='block'"
+                position= relative top= 50% left= 50%>
+                    EMI Calculator
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <div id="calelligibility" class="modal">
+        <span onclick="document.getElementById('calelligibility').style.display='none'"
+      class="close" title="Close Modal">&times;</span>
+
+      <h3>Eligibility Calculator</h3>
+            <form class="modal-content animate">
+                <div class="container">
+                    <p>
+                        <label for="monthlyIncome">Monthly Income:</label>
+                        <input type="text" id="monthlyIncome" name="monthlyIncome"><br><br>
+                    </p>
+                    
+                    <p>
+                        <button type="submit">Calculate</button>
+                    </p>
+                    <p>
+                        <label for="eligibility">Eligible Amount:</label>
+                        <input type="text" id="eligibility" name="eligibility" value="" readonly><br><br>
+                    </p>
+                </div>
+            </form>
+
+    </div>
+
+    <div id="calemi" class="modal">
+        <span onclick="document.getElementById('calemi').style.display='none'"
+            class="close" title="Close Modal">&times;</span>
+    
+            <form class="modal-content animate">
+                <div class="container">
+                    <p>
+                        <label for="loan">Loan Amount:</label>
+                        <input type="text" id="loan" name="loan_amount"><br><br>
+                    </p>
+                    <p>
+                        <label for="tenure">Monthly Income:</label>
+                        <input type="text" id="tenure" name="tenure"><br><br>
+                    </p>
+                    <p>
+                        <label for="roi">ROI:</label>
+                        <input type="text" id="emi_roi" name="emi_roi" value="8.5" readonly><br><br>
+                    </p>
+                    <p>
+                        <button type="submit">Calculate</button><br><br>
+                    </p>
+                    <p>
+                        <label for="emi">EMI:</label>
+                        <input type="text" id="emi" name="emi" value="" readonly><br><br>
+                    </p>
+                </div>
+            </form>
+    
+    </div>
+
+
+</html>

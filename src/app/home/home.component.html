@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <h1>HomePage</h1>
+<!----------------------------------------------ENTER LOGO-------------------------------------->
+        <div class="topnav">
+           <a href="#home"  >Home</a>  <!--(click)="openPage('Home')"-->
+            <a href="#aboutus">About US</a>
+
+            <a href="#calculator" (click)="document.getElementById('calculator').style.display='block'">
+                Calculator
+            </a>
+
+            <a href="#application" > Application </a> <!--(click)="getElementById('Application')"-->
+
+            <div class="dropdown">
+                <button class="dropbtn">Login
+                </button>
+                <div class="dropdown-content">
+                <a href="#login" (click)="document.getElementById('loginuser').style.display='block'">User Login</a>
+                <a href="#login" (click)="document.getElementById('loginadmin').style.display='block'">Admin Login</a>
+                </div>
+            </div>
+
+            <a href="#register" (click)="document.getElementById('register').style.display='block'">
+                Register
+            </a>
+
+            <a href="#faq">FAQ</a>
+        </div>
+        
+        <div id= "Home" class="container">
+            <img src="assets/img/HomePage.jpg" style="width: 100%; height: 300px;">
+            <div class="text-block">
+              <a href="#apply">Apply Now</a>
+            </div>
+        </div>
+
+    </body>
+</html>

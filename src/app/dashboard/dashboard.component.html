@@ -1,0 +1,29 @@
+<html>
+<body>
+    <h1>HomePage</h1>
+<!----------------------------------------------ENTER LOGO-------------------------------------->
+    <div class="topnav">
+        <a href="#home" onclick="openPage('Home')">Home</a>
+        <a href="#aboutus">About US</a>
+
+        <a href="#calculator" (click)="document.getElementById('calculator').style.display='block'">
+            Calculator
+        </a>
+
+        <a href="#application" (click)="getElementById('Application')"> Application </a>
+
+        <a href="#faq">FAQ</a>
+
+        <a href="#home" class="right" (click)="openPage('Home')">Logout</a>
+    </div>
+    
+    <div id= "Home" class="container">
+        <img src="assets/img/HomePage.jpg" style="width: 100%; height: 300px;">
+        <div class="text-block">
+          <a href="#apply">Apply Now</a>
+        </div>
+    </div>
+
+   
+</body>
+</html>
